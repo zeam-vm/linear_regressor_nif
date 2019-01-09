@@ -1,0 +1,19 @@
+[package]
+name = "linear_regressor_nif"
+version = "0.1.0"
+authors = []
+
+[lib]
+# The name of a target is the name of the library that will be generated. This
+# is defaulted to the name of the package, with any dashes replaced
+# with underscores. (Rust `extern crate` declarations reference this name;
+# therefore the value must be a valid Rust identifier to be usable.)
+name = "linear_regressor_nif"
+path = "src/lib.rs"
+crate-type = ["dylib"]
+
+[dependencies]
+ndarray = "0.11.0"
+rayon = "1.0"
+time = "0.1.40"
+num_cpus = "1.0"
